@@ -27,6 +27,7 @@
   border-width: 5px;
   border-style: solid;
   border-radius: 50%;
+  margin: 15px;
 
 }
 
@@ -70,4 +71,12 @@
 .pill-nav a.active {
   background-color: dodgerblue;
   color: white;
+}
+
+.ipynb-blog-post {
+  margin-left: 20px;
+}
+
+.hello-text {
+  margin: 25px;
 }
