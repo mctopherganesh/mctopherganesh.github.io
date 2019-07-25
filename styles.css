@@ -34,6 +34,7 @@
 .content {
   max-width: 500px;
   margin: auto;
+  width: 100%;
 }
 
 .title-text {
@@ -73,10 +74,3 @@
   color: white;
 }
 
-.ipynb-blog-post {
-  margin-left: 20px;
-}
-
-.hello-text {
-  margin: 25px;
-}
