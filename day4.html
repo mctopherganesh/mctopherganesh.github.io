@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>day5</title>
+<title>day4</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13116,36 +13116,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>guess what we're going to do today.</p>
-<p>I found a list of standard library things and I'm going to import them and see what they might do. I might actually get bored of this because there are a lot. You'll be learning a lot, I'll be learning a lot. I'm using the phrase 'a lot' a lot. What could go wrong?</p>
-<p>It's 2019-07-28 00:17:26.844698 and welcome to</p>
-<h1 id="Day-5">Day 5<a class="anchor-link" href="#Day-5">&#182;</a></h1><p><em>sometimes the blog post comes after the day, that's just how it be</em></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>what is the standard library? Great question.</p>
-<p>Python, the programming language I use is packed full of fun things right off the bat. On my other posts you may see "import" at some point. That's importing some files of code that I don't have. I can then use that pile of code in my own workflow.</p>
-<p>It's like this. You're at a crafts person's table. It's your table. It's really dope. You have all of these tools but you need a hammer. You always keep the really good hammer in the garage though.</p>
-<p>So you must import it. (not saying here that you "export" things ever, only saying what I'm saying).</p>
-<p><code>import hammer</code></p>
-<p>now you can use the hammer on things.</p>
-<p><code>hammer = Hammer()</code></p>
-<p><code>nail = 'nail'</code></p>
-<p><code>nail.hammer</code></p>
-<p>Try running that code.</p>
-<p>Tell me what happens.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Super bad analogy</p>
+<p>alright doody.</p>
+<p>i think i got it</p>
 
 </div>
 </div>
@@ -13155,7 +13127,28 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">atexit</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>subl create.py
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>alrighty right boom.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">dt</span>
 </pre></div>
 
     </div>
@@ -13165,10 +13158,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">atexit</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13185,10 +13178,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>allow programmer to define multiple exit functions to be executedupon normal program termination.
-
-Two public functions, register and unregister, are defined.
-
+<pre>&lt;module &#39;dt&#39; from &#39;/home/christopher/dt.py&#39;&gt;
 </pre>
 </div>
 </div>
@@ -13199,27 +13189,10 @@ Two public functions, register and unregister, are defined.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># wow, isn&#39;t that neat? (great spelling too) look how easy it is to learn about stuff. that is some good documentation too.</span>
-
-<span class="c1"># I am just going to literally print all of these out and read them for me. So you don&#39;t have to stay.</span>
-
-<span class="n">test_exit</span> <span class="o">=</span> <span class="n">atexit</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_exit</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">map</span><span class="p">(</span><span class="n">dt</span><span class="p">,[</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># look, up here.</span>
 </pre></div>
 
     </div>
@@ -13232,117 +13205,13 @@ Two public functions, register and unregister, are defined.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;module &#39;atexit&#39; (built-in)&gt;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">atexit</span><span class="o">.</span><span class="n">register</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>register(func, *args, **kwargs) -&gt; func
-
-Register a function to be executed upon normal program termination
-
-    func - function to be called at exit
-    args - optional arguments to pass to func
-    kwargs - optional keyword arguments to pass to func
-
-    func is returned to facilitate usage as a decorator.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">atexit</span> <span class="kn">import</span> <span class="n">register</span>
-
-<span class="k">def</span> <span class="nf">easy_funk</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;hello cruel world&#39;</span><span class="p">)</span>
-
-<span class="n">test_decorator</span><span class="o">=</span><span class="n">register</span><span class="p">(</span><span class="n">easy_funk</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">&#39;test string&#39;</span><span class="p">)</span>
-
-
-<span class="c1"># this import prints something on end of program execution</span>
-</pre></div>
-<p>this little script I wrote to test out the atexit module and ran it from the command line. it prints out:</p>
-<p><code>hello cruel world</code></p>
-<p><code>test string</code></p>
-<p>and the funny part was is that I didn't even call test_decorator. I just initialized it (this means it's only getting defined, the button isn't being pressed if that makes sense)</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>oh my gosh there are so many. it's crazy. you should honestly try this out for me because I have a list that's a mile long. Just do what I did there. That works. Let me do one or two more to see what I have here.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">calendar</span>
-
-<span class="n">calendar</span><span class="o">.</span><span class="vm">__doc__</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[20]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;Calendar printing functions\n\nNote when comparing these calendars to the ones printed by cal(1): By\ndefault, these calendars have Monday as the first day of the week, and\nSunday as the last (the European convention). Use setfirstweekday() to\nset the first day of the week (0=Monday, 6=Sunday).&#39;</pre>
+<pre>&lt;map at 0x7f9fec3892b0&gt;</pre>
 </div>
 
 </div>
@@ -13354,396 +13223,24 @@ Register a function to be executed upon normal program termination
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>uhhh how do I use it tho</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">calendar</span><span class="o">.</span><span class="n">February</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[21]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>whoa</p>
-<p>so you have to know I work with jupyter notebooks (maybe you thought I was just dope at html but notice how ungreat my styling is. I can use shift+tab to see autofinish solutions. It's like seeing what other people have searched through google but <strong>ALL</strong> the options.</p>
-<p>it's all about the environment people. trust me.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>this is serious. now I have to test all the things</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">calendar</span><span class="o">.</span><span class="n">January</span>
-<span class="n">calendar</span><span class="o">.</span><span class="n">February</span>
-<span class="n">calendar</span><span class="o">.</span><span class="n">March</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-24-62efdf796470&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> calendar<span class="ansi-blue-fg">.</span>January
-<span class="ansi-green-intense-fg ansi-bold">      2</span> calendar<span class="ansi-blue-fg">.</span>February
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>calendar<span class="ansi-blue-fg">.</span>March
-
-<span class="ansi-red-fg">AttributeError</span>: module &#39;calendar&#39; has no attribute &#39;March&#39;</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">calendar</span><span class="o">.</span><span class="n">January</span>
-<span class="n">calendar</span><span class="o">.</span><span class="n">February</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[25]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>uh weird... I don't see March in the functions.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>oh dudes/people/whathaveyou here's a cool <a href="https://stackabuse.com/introduction-to-the-python-calendar-module/">tutorial</a> on the thing</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="testing-id">#testing-id</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hc</span> <span class="o">=</span> <span class="n">calendar</span><span class="o">.</span><span class="n">HTMLCalendar</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hc</span><span class="o">.</span><span class="n">formatmonth</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;table border=&#34;0&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;month&#34;&gt;
-&lt;tr&gt;&lt;th colspan=&#34;7&#34; class=&#34;month&#34;&gt;July 2019&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;th class=&#34;mon&#34;&gt;Mon&lt;/th&gt;&lt;th class=&#34;tue&#34;&gt;Tue&lt;/th&gt;&lt;th class=&#34;wed&#34;&gt;Wed&lt;/th&gt;&lt;th class=&#34;thu&#34;&gt;Thu&lt;/th&gt;&lt;th class=&#34;fri&#34;&gt;Fri&lt;/th&gt;&lt;th class=&#34;sat&#34;&gt;Sat&lt;/th&gt;&lt;th class=&#34;sun&#34;&gt;Sun&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td class=&#34;mon&#34;&gt;1&lt;/td&gt;&lt;td class=&#34;tue&#34;&gt;2&lt;/td&gt;&lt;td class=&#34;wed&#34;&gt;3&lt;/td&gt;&lt;td class=&#34;thu&#34;&gt;4&lt;/td&gt;&lt;td class=&#34;fri&#34;&gt;5&lt;/td&gt;&lt;td class=&#34;sat&#34;&gt;6&lt;/td&gt;&lt;td class=&#34;sun&#34;&gt;7&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td class=&#34;mon&#34;&gt;8&lt;/td&gt;&lt;td class=&#34;tue&#34;&gt;9&lt;/td&gt;&lt;td class=&#34;wed&#34;&gt;10&lt;/td&gt;&lt;td class=&#34;thu&#34;&gt;11&lt;/td&gt;&lt;td class=&#34;fri&#34;&gt;12&lt;/td&gt;&lt;td class=&#34;sat&#34;&gt;13&lt;/td&gt;&lt;td class=&#34;sun&#34;&gt;14&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td class=&#34;mon&#34;&gt;15&lt;/td&gt;&lt;td class=&#34;tue&#34;&gt;16&lt;/td&gt;&lt;td class=&#34;wed&#34;&gt;17&lt;/td&gt;&lt;td class=&#34;thu&#34;&gt;18&lt;/td&gt;&lt;td class=&#34;fri&#34;&gt;19&lt;/td&gt;&lt;td class=&#34;sat&#34;&gt;20&lt;/td&gt;&lt;td class=&#34;sun&#34;&gt;21&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td class=&#34;mon&#34;&gt;22&lt;/td&gt;&lt;td class=&#34;tue&#34;&gt;23&lt;/td&gt;&lt;td class=&#34;wed&#34;&gt;24&lt;/td&gt;&lt;td class=&#34;thu&#34;&gt;25&lt;/td&gt;&lt;td class=&#34;fri&#34;&gt;26&lt;/td&gt;&lt;td class=&#34;sat&#34;&gt;27&lt;/td&gt;&lt;td class=&#34;sun&#34;&gt;28&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td class=&#34;mon&#34;&gt;29&lt;/td&gt;&lt;td class=&#34;tue&#34;&gt;30&lt;/td&gt;&lt;td class=&#34;wed&#34;&gt;31&lt;/td&gt;&lt;td class=&#34;noday&#34;&gt;&amp;nbsp;&lt;/td&gt;&lt;td class=&#34;noday&#34;&gt;&amp;nbsp;&lt;/td&gt;&lt;td class=&#34;noday&#34;&gt;&amp;nbsp;&lt;/td&gt;&lt;td class=&#34;noday&#34;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table border="0" cellpadding="0" cellspacing="0" class="month">
-<tr><th colspan="7" class="month">July 2019</th></tr>
-<tr><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th><th class="sun">Sun</th></tr>
-<tr><td class="mon">1</td><td class="tue">2</td><td class="wed">3</td><td class="thu">4</td><td class="fri">5</td><td class="sat">6</td><td class="sun">7</td></tr>
-<tr><td class="mon">8</td><td class="tue">9</td><td class="wed">10</td><td class="thu">11</td><td class="fri">12</td><td class="sat">13</td><td class="sun">14</td></tr>
-<tr><td class="mon">15</td><td class="tue">16</td><td class="wed">17</td><td class="thu">18</td><td class="fri">19</td><td class="sat">20</td><td class="sun">21</td></tr>
-<tr><td class="mon">22</td><td class="tue">23</td><td class="wed">24</td><td class="thu">25</td><td class="fri">26</td><td class="sat">27</td><td class="sun">28</td></tr>
-<tr><td class="mon">29</td><td class="tue">30</td><td class="wed">31</td><td class="noday">&nbsp;</td><td class="noday">&nbsp;</td><td class="noday">&nbsp;</td><td class="noday">&nbsp;</td></tr>
-</table>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The cool thing about Jupyter Notebook is that if you embed html in a markdown cell, you get it rendered. pretty neat huh?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">operator</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">operator</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span> <span class="c1"># in all honesty I came back through and added this in places but doing this makes</span>
-<span class="c1"># more readable (by &#39;doing this&#39; I mean calling the print function on the method doc)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Operator interface.
-
-This module exports a set of functions implemented in C corresponding
-to the intrinsic operators of Python.  For example, operator.add(x, y)
-is equivalent to the expression x+y.  The function names are those
-used for special methods; variants without leading and trailing
-&#39;__&#39; are also provided for convenience.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">operator</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span> <!--test comment out this span class <span class="c1"># saw that coming didn&#39;t ya</span>-->
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>hmm..saw that coming didn't ya?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">operator</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="s1">&#39;me&#39;</span><span class="p">,</span><span class="s1">&#39;ow&#39;</span><span class="p">)</span>
-<span class="n">a</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[59]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;meow&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">operator</span><span class="o">.</span><span class="n">attrgetter</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span> <span class="c1"># better to use print </span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>attrgetter(attr, ...) --&gt; attrgetter object
-
-Return a callable object that fetches the given attribute(s) from its operand.
-After f = attrgetter(&#39;name&#39;), the call f(r) returns r.name.
-After g = attrgetter(&#39;name&#39;, &#39;date&#39;), the call g(r) returns (r.name, r.date).
-After h = attrgetter(&#39;name.first&#39;, &#39;name.last&#39;), the call h(r) returns
-(r.name.first, r.name.last).
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">operator</span><span class="o">.</span><span class="n">attrgetter</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="n">f</span> <span class="c1"># I turned b into a string later on. writing code in jupyter notebooks is like changing the course of history</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[60]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>operator.attrgetter(&#39;meow&#39;, &#39;9&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>woah. freaky.</p>
-<p>Alright ya'll. I just showed anyone who has read this and can type into a python interpreter a crap ton about how to learn stuff. Honestly, if docs returns an error, you probably shouldn't use it. I'm a little intrigued to say the least about there note be a <code>.March</code> method in the <code>calendar</code> module so I'm definitely looking into that a little bit more.</p>
-<p>Peaches</p>
+<p>2019-07-26 16:41:04.586424</p>
+<p>YO. Let's go. Welcome to</p>
+<h1 id="Day-4">Day 4<a class="anchor-link" href="#Day-4">&#182;</a></h1><p>(imagine dope intro music playing to this, maybe I can  make that happen soon - something between <a href="https://www.youtube.com/watch?v=hicayypkI7g">this</a>, <a href="https://www.youtube.com/watch?v=yydZbVoCbn0">this</a>, and <a href="https://www.youtube.com/watch?v=evf-U8he-6o">this</a>. Please don't listen to all of those three together unless you have a buddy around to supervise your scary but amazing transformation into something darkly twisted and surreal.</p>
+<p>Just kidding.</p>
+<p>do you, you devil.</p>
+<p>what's happening up there? (above the title there with the hash tag comment..) I'm using map on a thingy I imported and then the time is at the beginning of this post.</p>
+<p>what is map? it's a function, that run's functions a specified amount of times. That might not makes sense but I'll walk through it anyway.</p>
+<p><code>import dt</code> bringing in my code.
+<code>print(dt)</code> because I forgot that I wrote this function to be called from the command line so all it does is
+print the module's locaiton in memory
+<code>map(dt,[1])</code> this runs the function, and runs it once. don't know why it has to be in a list. I'm sure theres a super good reason though.</p>
+<p>dt copies the date and time into my clip board. then I can hit <code>ctrl-v</code> and it just prints out. I have to run it in my terminal though. I obviously didn't get to extend it. This is actually what I spent part of my day on yesterday. What I didn't realize when I was writing that post is that I only spent part of the day actually being stuck on something. I wasn't working the whole day on it but sometimes when you get stuck by one thing it seems like you're getting stuck by a bunch more.</p>
+<p>I had actually biked to the library yesterday and forgot my lock. It was a super bummber because I seriously do not ever leave my bike unlocked anywhere. Never ever. Once you have your bike stolen and are not able to make it to work or class on time then you'll understand but maybe think if your car got stolen.</p>
+<p>Yeah so I was a bit frustrated with myself. I didn't even realize I didn't have the lock until I was standing at the bike rack. I had been focused on bringing all of these other things I thought I was going to study. However, I ended up finding a place I could park my bike and keep an eye on it while coding.</p>
+<p>There happened to be a veterens concert going on too so I got to hear a good tune while I was tip tapping away, creating debugging issues for myself.</p>
+<p>Here's what I wanted to write about when I first sat down to originally write this kids.</p>
+<p>There's no one golden resource that will teach you how to code. There is no way you can learn to code by asking anyone else how they learned how to code. You have to just do it. I don't intend negative attitude or connotations when I say fail and fail fast. Fail as fast as you can. The reason I've ever learned how to build a program that worked is because of errors. I would have never looked up the next thing on Google. These days where you think you've spent hours reading documentation and minutes coding are great days! You have done good work these days. But do not put your faith into one resource. You must be <em>doing</em> it. No one can teach you. Coding is like painting. You can hang with B Ross and watch him paint things. Or you can do it with him (I really hope most people paint with him).</p>
+<p>I'm working on a lot of things right now. I just wanted to put that out there. So much exciting stuff though. I am super stoked to be doing #100daysofcode again.</p>
 
 </div>
 </div>
