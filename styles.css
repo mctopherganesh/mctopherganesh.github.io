@@ -123,3 +123,8 @@ th a {
 .table .table-hover {
   background-color: rgb(192,204,179);
 }
+
+.table {
+  padding-left: 20px;
+  padding-right: 20px;
+}
