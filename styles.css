@@ -51,12 +51,6 @@ html {
   text-align: center;
 }
 
-.content {
-  max-width: 500px;
-  margin: auto;
-  width: 100%;
-}
-
 .title-text {
   /*font-family: 'Fjalla One', sans-serif;*/
   /*font-family: 'Russo One', sans-serif;*/
@@ -120,8 +114,8 @@ th a {
   color: rgb(162,228,149);
 }
 
-.table .table-hover {
-  background-color: rgb(192,204,179);
+.table .table-hover th:hover {
+  color: white; /*was trying to narrow down which element selects the hover on the table*/
 }
 
 .table {
