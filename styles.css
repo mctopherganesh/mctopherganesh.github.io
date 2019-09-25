@@ -9,8 +9,6 @@ html {
 	height: 100%;
 }
 
-.table
-
 .title-text {
 	margin: auto;
 }
@@ -26,19 +24,9 @@ html {
 	margin: 10px;
 }
 
-img {
-	/* padding: 10px;*/
-
-}
-
 
 .title-text {
-  /*font-family: 'Fjalla One', sans-serif;*/
-  /*font-family: 'Russo One', sans-serif;*/
-  /*font-family: 'Cuprum', sans-serif;*/
-  /* font-family: 'Bahianita', cursive;*/
   font-family: 'Khand', sans-serif;
-
   font-size: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -47,12 +35,6 @@ img {
 h1.blog-title-text {
 	margin-top: 75px;
 }
-
-/*
-.title-bar {
-  border-top: 1px solid rgb(202,212,191);
-}
-*/
 
 .content {
   text-align: center;
@@ -78,7 +60,7 @@ th a {
 }
 
 .table .table-hover th:hover {
-  color: white; /*was trying to narrow down which element selects the hover on the table*/
+  color: white;
 }
 
 .table {
@@ -87,8 +69,6 @@ th a {
 }
 
 .card-title {
-	/*color: rgb(202,212,191);*/
-	/*background-color: rgba(4,7,8,0.15);*/
 	font-family: 'Khand', sans-serif;
 }
 
