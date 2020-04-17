@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>submission_1</title>
+<title>second_linux_assignment</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,119 +13077,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Comparitive-Analysis-on-Free-Apps-in-Google-Play-and-Apple-App-Store.">Comparitive Analysis on Free Apps in Google Play and Apple App Store.<a class="anchor-link" href="#Comparitive-Analysis-on-Free-Apps-in-Google-Play-and-Apple-App-Store.">&#182;</a></h1><p>In this guided project, Dataquest has us roleplaying as data analysts at an app building company. The apps that (our company) we build are free. The mission, if we choose to accept it:</p>
-<blockquote><p>"Our goal for this project is to 
-analyze data to help our developers 
-understand what type of apps are 
-likely to attract more users"</p>
-</blockquote>
-<p><em>As I go along I try to keep track of which questions I'm working on, above was Analzying Mobile App Data, 1/14, questions 1-2.</em></p>
-
+<h1 id="SUPER-SECRET">SUPER SECRET<a class="anchor-link" href="#SUPER-SECRET">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
-
-<span class="n">Video</span><span class="p">(</span><span class="s2">&quot;submission_1.mp4&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[1]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<video src="submission_1.mp4" controls  >
-      Your browser does not support the <code>video</code> element.
-    </video>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="I-rolled-back-some-changes-and-deleted-the-analysis-that-was-included-in-this-video!-Below-is-the-original-analysis,-redux-to-come.-Apologies-for-any-confusion!">I rolled back some changes and deleted the analysis that was included in this video! Below is the original analysis, redux to come. Apologies for any confusion!<a class="anchor-link" href="#I-rolled-back-some-changes-and-deleted-the-analysis-that-was-included-in-this-video!-Below-is-the-original-analysis,-redux-to-come.-Apologies-for-any-confusion!">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># function that they created for project</span>
-<span class="k">def</span> <span class="nf">explore_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">rows_and_cols</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    function that takes in dataset and explores it based on user&#39;s </span>
-<span class="sd">    set parameters.</span>
-<span class="sd">    </span>
-<span class="sd">    </span>
-<span class="sd">    __parameters__</span>
-<span class="sd">    </span>
-<span class="sd">    dataset: (var to dataset) parameter to be explored</span>
-<span class="sd">    start: (int) row number where you want the dataset to be explored from</span>
-<span class="sd">    end: (int) row number where you want dataset to be explored to. </span>
-<span class="sd">    rows_and_cols: (bool) defaults to false, if made true, displays</span>
-<span class="sd">    total rows and columns for entire dataset after exploration print</span>
-<span class="sd">    out</span>
-<span class="sd">    </span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    
-    <span class="n">dataset_slice</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">]</span>
-    
-    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">dataset_slice</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># adds newline when printing for prettiness</span>
-        
-    <span class="k">if</span> <span class="n">rows_and_cols</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of rows:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">))</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of columns&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Opening-and-Exploring-the-Data">Opening and Exploring the Data<a class="anchor-link" href="#Opening-and-Exploring-the-Data">&#182;</a></h3><p><strong>(2/14) Questions 1-3</strong></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importing csv tools and opening datasets into namespace</span>
-<span class="c1"># question 1</span>
-
-<span class="kn">from</span> <span class="nn">csv</span> <span class="kn">import</span> <span class="n">reader</span>
-<span class="n">applestoredata</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">reader</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;AppleStore.csv&#39;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)))</span>
-<span class="n">googstoredata</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">reader</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;googleplaystore.csv&#39;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mkdir</span> <span class="n">super_secret_stuff</span>
 </pre></div>
 
     </div>
@@ -13199,580 +13096,67 @@ likely to attract more users"</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># question 2 </span>
-<span class="c1"># exploring data with previously built function</span>
-<span class="n">explore_data</span><span class="p">(</span><span class="n">applestoredata</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">touch</span> <span class="n">super_secret_stuff</span><span class="o">/</span><span class="n">top_secret</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;id&#39;, &#39;track_name&#39;, &#39;size_bytes&#39;, &#39;currency&#39;, &#39;price&#39;, &#39;rating_count_tot&#39;, &#39;rating_count_ver&#39;, &#39;user_rating&#39;, &#39;user_rating_ver&#39;, &#39;ver&#39;, &#39;cont_rating&#39;, &#39;prime_genre&#39;, &#39;sup_devices.num&#39;, &#39;ipadSc_urls.num&#39;, &#39;lang.num&#39;, &#39;vpp_lic&#39;]
-
-
-[&#39;284882215&#39;, &#39;Facebook&#39;, &#39;389879808&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;2974676&#39;, &#39;212&#39;, &#39;3.5&#39;, &#39;3.5&#39;, &#39;95.0&#39;, &#39;4+&#39;, &#39;Social Networking&#39;, &#39;37&#39;, &#39;1&#39;, &#39;29&#39;, &#39;1&#39;]
-
-
-[&#39;389801252&#39;, &#39;Instagram&#39;, &#39;113954816&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;2161558&#39;, &#39;1289&#39;, &#39;4.5&#39;, &#39;4.0&#39;, &#39;10.23&#39;, &#39;12+&#39;, &#39;Photo &amp; Video&#39;, &#39;37&#39;, &#39;0&#39;, &#39;29&#39;, &#39;1&#39;]
-
-
-[&#39;529479190&#39;, &#39;Clash of Clans&#39;, &#39;116476928&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;2130805&#39;, &#39;579&#39;, &#39;4.5&#39;, &#39;4.5&#39;, &#39;9.24.12&#39;, &#39;9+&#39;, &#39;Games&#39;, &#39;38&#39;, &#39;5&#39;, &#39;18&#39;, &#39;1&#39;]
-
-
-[&#39;420009108&#39;, &#39;Temple Run&#39;, &#39;65921024&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;1724546&#39;, &#39;3842&#39;, &#39;4.5&#39;, &#39;4.0&#39;, &#39;1.6.2&#39;, &#39;9+&#39;, &#39;Games&#39;, &#39;40&#39;, &#39;5&#39;, &#39;1&#39;, &#39;1&#39;]
-
-
-Number of rows: 7198
-Number of columns 16
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>(Q3) The structure of our Apple App Store data is 7198 rows and 16 columns. Columns that could assist us with our analysis are track_name (which is the app's name), price, reviews, installs, type, genre, and category.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># q2</span>
-<span class="c1"># number of rows and columns printed with the True parameter above this</span>
-<span class="c1"># cell.</span>
-<span class="c1"># exploring data with previously built function</span>
-
-<span class="n">explore_data</span><span class="p">(</span><span class="n">googstoredata</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;App&#39;, &#39;Category&#39;, &#39;Rating&#39;, &#39;Reviews&#39;, &#39;Size&#39;, &#39;Installs&#39;, &#39;Type&#39;, &#39;Price&#39;, &#39;Content Rating&#39;, &#39;Genres&#39;, &#39;Last Updated&#39;, &#39;Current Ver&#39;, &#39;Android Ver&#39;]
-
-
-[&#39;Photo Editor &amp; Candy Camera &amp; Grid &amp; ScrapBook&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.1&#39;, &#39;159&#39;, &#39;19M&#39;, &#39;10,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Art &amp; Design&#39;, &#39;January 7, 2018&#39;, &#39;1.0.0&#39;, &#39;4.0.3 and up&#39;]
-
-
-[&#39;Coloring book moana&#39;, &#39;ART_AND_DESIGN&#39;, &#39;3.9&#39;, &#39;967&#39;, &#39;14M&#39;, &#39;500,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Art &amp; Design;Pretend Play&#39;, &#39;January 15, 2018&#39;, &#39;2.0.0&#39;, &#39;4.0.3 and up&#39;]
-
-
-[&#39;U Launcher Lite – FREE Live Cool Themes, Hide Apps&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.7&#39;, &#39;87510&#39;, &#39;8.7M&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Art &amp; Design&#39;, &#39;August 1, 2018&#39;, &#39;1.2.4&#39;, &#39;4.0.3 and up&#39;]
-
-
-[&#39;Sketch - Draw &amp; Paint&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.5&#39;, &#39;215644&#39;, &#39;25M&#39;, &#39;50,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Teen&#39;, &#39;Art &amp; Design&#39;, &#39;June 8, 2018&#39;, &#39;Varies with device&#39;, &#39;4.2 and up&#39;]
-
-
-Number of rows: 10842
-Number of columns 13
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>(Q3) The structure of our Google Store App data is 10,842 rows and 13 columns. Less categories than the Apple store data. The column's that might be able to help us out with our analysis from this dataset would be like columns that we've previously found in the apple store dataset, app, category, installs, type, price, and genres.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">explore_data</span><span class="p">(</span><span class="n">applestoredata</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">explore_data</span><span class="p">(</span><span class="n">googstoredata</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="c1"># showing differences in categorical data</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;id&#39;, &#39;track_name&#39;, &#39;size_bytes&#39;, &#39;currency&#39;, &#39;price&#39;, &#39;rating_count_tot&#39;, &#39;rating_count_ver&#39;, &#39;user_rating&#39;, &#39;user_rating_ver&#39;, &#39;ver&#39;, &#39;cont_rating&#39;, &#39;prime_genre&#39;, &#39;sup_devices.num&#39;, &#39;ipadSc_urls.num&#39;, &#39;lang.num&#39;, &#39;vpp_lic&#39;]
-
-
-[&#39;App&#39;, &#39;Category&#39;, &#39;Rating&#39;, &#39;Reviews&#39;, &#39;Size&#39;, &#39;Installs&#39;, &#39;Type&#39;, &#39;Price&#39;, &#39;Content Rating&#39;, &#39;Genres&#39;, &#39;Last Updated&#39;, &#39;Current Ver&#39;, &#39;Android Ver&#39;]
-
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>(Q3)</p>
-<p>The documentation shows up as a 404, so I will not be able to post a reliable link for my project.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Deleting-Wrong-Data">Deleting Wrong Data<a class="anchor-link" href="#Deleting-Wrong-Data">&#182;</a></h3><p>(3/14) 
-    The Google Play data set has a dedicated discussion section, and we can see that one of the discussions describes an error for a certain row.</p>
-
-<pre><code>1) Read the discussion and find out what the index of the row is.
-
-2) Print the row at that index to check whether it's indeed incorrect. Take into account the user reporting the error might or might have not removed the header row, so the index number might vary.
-
-3) If the row has an error, remove the row using the del statement. For instance, to remove the row with the index 149 from a data set data that is stored as a list of list, you can use the code del data[149].
-
-4) Make sure you don't run the del statement more than once, otherwise you'll delete more than one row.
-
-5) Read the discussion section for the App Store data set, and see whether you can find any reports of wrong data.</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>(Q1)</p>
-<p>Went to <a href="&#39;https://www.kaggle.com/lava18/google-play-store-apps/discussion/66015&#39;">discussion section to find the bad row</a>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># q2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">googstoredata</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">googstoredata</span><span class="p">[</span><span class="mi">10473</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;App&#39;, &#39;Category&#39;, &#39;Rating&#39;, &#39;Reviews&#39;, &#39;Size&#39;, &#39;Installs&#39;, &#39;Type&#39;, &#39;Price&#39;, &#39;Content Rating&#39;, &#39;Genres&#39;, &#39;Last Updated&#39;, &#39;Current Ver&#39;, &#39;Android Ver&#39;]
-[&#39;Life Made WI-Fi Touchscreen Photo Frame&#39;, &#39;1.9&#39;, &#39;19&#39;, &#39;3.0M&#39;, &#39;1,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;&#39;, &#39;February 11, 2018&#39;, &#39;1.0.19&#39;, &#39;4.0 and up&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The maximum a rating can be in the 'Rating' column can be 5 as said in the corresponding documentation and issue submitted to the dataset.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># q3 will be deleting this row of data with the del statement. highly dangerous. don&#39;t try at home without proper</span>
-<span class="c1"># adult supervision</span>
-<span class="c1"># q4, not running this cell more than twice</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">googstoredata</span><span class="p">[</span><span class="mi">10473</span><span class="p">])</span>
-<span class="k">del</span> <span class="n">googstoredata</span><span class="p">[</span><span class="mi">10473</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">googstoredata</span><span class="p">[</span><span class="mi">10473</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;Life Made WI-Fi Touchscreen Photo Frame&#39;, &#39;1.9&#39;, &#39;19&#39;, &#39;3.0M&#39;, &#39;1,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;&#39;, &#39;February 11, 2018&#39;, &#39;1.0.19&#39;, &#39;4.0 and up&#39;]
-[&#39;osmino Wi-Fi: free WiFi&#39;, &#39;TOOLS&#39;, &#39;4.2&#39;, &#39;134203&#39;, &#39;4.1M&#39;, &#39;10,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Tools&#39;, &#39;August 7, 2018&#39;, &#39;6.06.14&#39;, &#39;4.4 and up&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>(Q5) No wrong data rows in the apple store data csv according to some research through the <a href="&#39;https://www.kaggle.com/ramamet4/app-store-data-set-10k-apps/discussion&#39;">dataset's discussion</a> however did notice discussions in thread about duplicate rows which will be covered in the next section.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Removing-Duplicate-Entries:-Part-One">Removing Duplicate Entries: Part One<a class="anchor-link" href="#Removing-Duplicate-Entries:-Part-One">&#182;</a></h3><p>(4/14)</p>
-
-<pre><code>1) Using a combination of narrative and code, explain the reader that the Google Play data set has duplicate entries. Print a few duplicate rows to confirm.
-
-2) Count the number of duplicates using the technique we learned above.
-
-3) Explain that you won't remove the duplicates randomly. Describe the criterion you're going to use to remove the duplicates.
-
-4) We already suggested a criterion above, but you can come up with another criterion if you want. Make sure you support your criterion with at least one argument.</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>1) Through data collection and entry efforts we sometimes capture the same data multiple times or in ways that will obfuscate the dataset in unimaginable ways when it comes to building statistical understandings of the data.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">googstoredata</span><span class="p">:</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;Instagram&#39;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;Instagram&#39;, &#39;SOCIAL&#39;, &#39;4.5&#39;, &#39;66577313&#39;, &#39;Varies with device&#39;, &#39;1,000,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Teen&#39;, &#39;Social&#39;, &#39;July 31, 2018&#39;, &#39;Varies with device&#39;, &#39;Varies with device&#39;]
-[&#39;Instagram&#39;, &#39;SOCIAL&#39;, &#39;4.5&#39;, &#39;66577446&#39;, &#39;Varies with device&#39;, &#39;1,000,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Teen&#39;, &#39;Social&#39;, &#39;July 31, 2018&#39;, &#39;Varies with device&#39;, &#39;Varies with device&#39;]
-[&#39;Instagram&#39;, &#39;SOCIAL&#39;, &#39;4.5&#39;, &#39;66577313&#39;, &#39;Varies with device&#39;, &#39;1,000,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Teen&#39;, &#39;Social&#39;, &#39;July 31, 2018&#39;, &#39;Varies with device&#39;, &#39;Varies with device&#39;]
-[&#39;Instagram&#39;, &#39;SOCIAL&#39;, &#39;4.5&#39;, &#39;66509917&#39;, &#39;Varies with device&#39;, &#39;1,000,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Teen&#39;, &#39;Social&#39;, &#39;July 31, 2018&#39;, &#39;Varies with device&#39;, &#39;Varies with device&#39;]
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2) using the technique from the lessons</span>
-<span class="n">dup_apps</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">uniq_apps</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">googstoredata</span><span class="p">:</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">uniq_apps</span><span class="p">:</span>
-        <span class="n">dup_apps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">uniq_apps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-        
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;number of duplicate apps:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dup_apps</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;number of unique apps:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">uniq_apps</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">locate</span> <span class="n">top_secret</span><span class="o">.</span><span class="n">txt</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="n">secret_place</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>number of duplicate apps: 1181
-number of unique apps: 9660
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>(Q3 and Q4)</p>
-<p>Instead of removing the duplicates randomly, we can see that in the duplicates example that I printed above the number of reviews gets larger the closer to the bottom of the set. That means more recent data has been entered in the dataset and that we might be able to find this pattern elsewhere with duplicates.</p>
-<p>to do this we'll build a dictionary that has a key as the app name and the value as the number of reviews. we'll use this to make sure that we're collecting the dataset entries with the highest number of reviews and then we'll use the dictionary as a set since we'll only have set of the app and it's reviews.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Removing-Duplicate-Entries:-Part-Two">Removing Duplicate Entries: Part Two<a class="anchor-link" href="#Removing-Duplicate-Entries:-Part-Two">&#182;</a></h3><p>(5/14)</p>
-<p>Create a dictionary where each key is a unique app name and the corresponding dictionary value is the highest number of reviews of that app.</p>
-<p><a href="&#39;https://app.dataquest.io/m/350/guided-project%3A-profitable-app-profiles-for-the-app-store-and-google-play-markets/5/removing-duplicate-entries-part-two&#39;">(click here for mission instructions)</a>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reviews_max</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">googstoredata</span><span class="p">:</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">n_reviews</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-    
-    <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">reviews_max</span> <span class="ow">and</span> <span class="n">reviews_max</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">n_reviews</span><span class="p">:</span>
-        <span class="n">reviews_max</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">n_reviews</span>
-        
-    <span class="k">elif</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">reviews_max</span><span class="p">:</span>
-        <span class="n">reviews_max</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">n_reviews</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>What we are doing above is this: creating an empty dictionary, initialize a for loop over the google store data, initialize the name column to <code>name</code>, if that name <strong>is</strong> in dictionary <strong>but</strong> the review number is lower than the current entry, replace with new entry
-    else if the name is <strong>not</strong> found in the dictionary, add a new entry with the value being number of reviews.</p>
-<p>To prove that we've reduced the number of duplicates down we can do some basic arithmatic.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">googstoredata</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">reviews_max</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[11]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>1181</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Then we'll use the just made dictionary to spot and clean the duplicates out of another list we'll create.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">goog_clean</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">goog_added</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">googstoredata</span><span class="p">:</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">n_reviews</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-    
-    <span class="k">if</span> <span class="p">(</span><span class="n">reviews_max</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">==</span> <span class="n">n_reviews</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">goog_added</span><span class="p">):</span>
-        <span class="n">goog_clean</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
-        <span class="n">goog_added</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cat</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">christopher</span><span class="o">/</span><span class="n">secret_place</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>/home/christopher/apprenticeship/linux_module/second_linux_project/super_secret_stuff/top_secret.txt
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Removing-Non-English-Apps:-Part-1">Removing Non-English Apps: Part 1<a class="anchor-link" href="#Removing-Non-English-Apps:-Part-1">&#182;</a></h3>
-<pre><code>1) Write a function that takes in a string and returns False if there's any character in the string that doesn't belong to the set of common English characters, otherwise it returns True.
-
--Inside the function, iterate over the input string. For each iteration check whether the number associated with the character is greater than 127. When a character is greater than 127, the function should immediately return False — the app name is probably non-English since it contains a character that doesn't belong to the set of common English characters.
--If the loop finishes running without the return statement being executed, then it means no character had a corresponding number over 127 — the app name is probably English, so the functions should return True.
-
-2) Use your function to check whether these app names are detected as English or non-English:
-
-'Instagram'
-'爱奇艺PPS -《欢乐颂2》电视剧热播'
-'Docs To Go™ Free Office Suite'
-'Instachat 😜'</code></pre>
+</div>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_english</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
-    <span class="n">non_ascii</span> <span class="o">=</span> <span class="mi">0</span>
-    
-    <span class="k">for</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">ord</span><span class="p">(</span><span class="n">character</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">127</span><span class="p">:</span>
-            <span class="n">non_ascii</span> <span class="o">+=</span> <span class="mi">1</span>
-    
-    <span class="k">if</span> <span class="n">non_ascii</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">True</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This function will help us map the characters in the dataset that are not english characters, or above a certain 'ascii' level, and any level above '127' is above the english character count.</p>
-<p>We will actually use it twice in two different for clauses to clean out the lists of applications below.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Removing-Non-English-Apps:-Part-Two">Removing Non-English Apps: Part Two<a class="anchor-link" href="#Removing-Non-English-Apps:-Part-Two">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">goog_engl</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">appl_engl</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">goog_clean</span><span class="p">:</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">is_english</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-        <span class="n">goog_engl</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
-        
-<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">applestoredata</span><span class="p">:</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">is_english</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-        <span class="n">appl_engl</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sudo</span> <span class="n">find</span> <span class="o">/</span> <span class="o">-</span><span class="n">maxdepth</span> <span class="mi">4</span> <span class="o">-</span><span class="n">size</span> <span class="o">+</span><span class="mi">1</span><span class="n">M</span> <span class="o">-</span><span class="n">exec</span> <span class="n">ls</span> <span class="o">-</span><span class="n">lh</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span> \<span class="p">;</span> <span class="o">|</span> <span class="n">sort</span> <span class="o">-</span><span class="n">k</span> <span class="mi">5</span><span class="n">nr</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="n">filesizes</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 
     </div>
@@ -13785,7 +13169,7 @@ number of unique apps: 9660
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">explore_data</span><span class="p">(</span><span class="n">goog_engl</span><span class="p">,</span><span class="mi">2000</span><span class="p">,</span><span class="mi">2005</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>head /home/christopher/filesizes.txt
 </pre></div>
 
     </div>
@@ -13802,21 +13186,16 @@ number of unique apps: 9660
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;Coupon Sherpa&#39;, &#39;SHOPPING&#39;, &#39;4.4&#39;, &#39;7793&#39;, &#39;6.1M&#39;, &#39;500,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Shopping&#39;, &#39;February 6, 2018&#39;, &#39;3.0.3&#39;, &#39;4.0.3 and up&#39;]
-
-
-[&#39;Gyft - Mobile Gift Card Wallet&#39;, &#39;SHOPPING&#39;, &#39;4.1&#39;, &#39;9701&#39;, &#39;14M&#39;, &#39;500,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Shopping&#39;, &#39;July 25, 2018&#39;, &#39;2.4.0&#39;, &#39;4.4 and up&#39;]
-
-
-[&#39;SavingStar - Grocery Coupons&#39;, &#39;SHOPPING&#39;, &#39;4.2&#39;, &#39;31519&#39;, &#39;21M&#39;, &#39;1,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Shopping&#39;, &#39;June 12, 2018&#39;, &#39;4.9.1&#39;, &#39;4.0 and up&#39;]
-
-
-[&#39;The Coupons App&#39;, &#39;SHOPPING&#39;, &#39;4.5&#39;, &#39;181990&#39;, &#39;Varies with device&#39;, &#39;10,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Shopping&#39;, &#39;April 27, 2018&#39;, &#39;Varies with device&#39;, &#39;Varies with device&#39;]
-
-
-[&#39;Shopkick: Free Gift Cards, Shop Rewards &amp; Deals&#39;, &#39;SHOPPING&#39;, &#39;4.3&#39;, &#39;213735&#39;, &#39;43M&#39;, &#39;10,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Shopping&#39;, &#39;July 24, 2018&#39;, &#39;5.3.73&#39;, &#39;4.4 and up&#39;]
-
-
+<pre>-rw-rw-r-- 1 christopher christopher 762M Sep 16  2019 /home/christopher/malware_data_science_entrypoints_redacted.zip
+-rw-rw-r-- 1 christopher christopher 622M Aug 10  2018 /home/christopher/Downloads/Anaconda3-5.2.0-Linux-x86_64.sh
+-rw-rw-r-- 1 christopher christopher 604M Sep  3  2018 /home/christopher/Downloads/Anaconda2-5.2.0-Linux-x86_64.sh
+-rw-rw-r-- 1 christopher christopher 517M Aug  5  2019 /home/christopher/Downloads/Anaconda3-2019.07-Linux-x86_64.sh
+-rw-rw-r-- 1 christopher christopher 485M May 28  2019 /home/christopher/Videos/2019-05-28 23-07-36.flv
+-rw-rw-r-- 1 christopher christopher 471M Feb 26 00:55 /home/christopher/Downloads/Watch Interview - Spark Hire.mp4
+-rw-rw-r-- 1 christopher christopher 413M May 27  2019 /home/christopher/Videos/2019-05-27 20-07-53.flv
+-rw-rw-r-- 1 christopher christopher 369M Jul  5  2019 /home/christopher/Videos/2019-07-05 16-43-53.flv
+-rw-rw-r-- 1 christopher christopher 357M Jul 22  2019 /home/christopher/Videos/2019-07-22 15-02-24.flv
+-rw-rw-r-- 1 christopher christopher 347M Jul 17  2019 /home/christopher/Music/3_Hours_of_Once_Upon_a_Time_in_Paris-Erik Satie[HD].mp3
 </pre>
 </div>
 </div>
@@ -13824,44 +13203,60 @@ number of unique apps: 9660
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Isolating-the-Free-Apps">Isolating the Free Apps<a class="anchor-link" href="#Isolating-the-Free-Apps">&#182;</a></h3>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">android_final</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">ios_final</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">goog_engl</span><span class="p">:</span>
-    <span class="n">price</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">price</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span>
-        <span class="n">android_final</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">appl_engl</span><span class="p">:</span>
-    <span class="n">price</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">price</span> <span class="o">==</span> <span class="s1">&#39;0.0&#39;</span><span class="p">:</span>
-        <span class="n">ios_final</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>tail /home/christopher/filesizes.txt
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>-rw-rw-r-- 1 christopher christopher 1.1M Feb  8 10:44 /home/christopher/Pictures/Menu_855.png
+-rw-rw-r-- 1 christopher christopher 1.1M Jul 19  2019 /home/christopher/Pictures/desktop 1_764.png
+-rw-rw-r-- 1 christopher christopher 1.1M May 16  2019 /home/christopher/Pictures/Selection_747.png
+-rwxr-xr-x 1 root root 1.1M Dec  4 08:25 /usr/bin/x86_64-linux-gnu-gfortran-7
+-rwxr-xr-x 1 root root 1.1M Jan  6 02:30 /usr/lib/bluetooth/bluetoothd
+-rwxr-xr-x 1 root root 1.1M Jun  6  2019 /bin/bash
+-rwxr-xr-x 1 root root 1.1M Jun  6  2019 /usr/bin/vim.tiny
+-rwxr-xr-x 1 root root 1.1M Mar  8  2018 /usr/bin/pidgin
+-rwxr-xr-x 1 root root 1.1M May  9  2018 /usr/bin/gnome-keyring-daemon
+-rwxr-xr-x 1 root root 1.1M Sep 30 19:34 /opt/sublime_text/crash_reporter
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hungry-for-Data">Hungry for Data<a class="anchor-link" href="#Hungry-for-Data">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">android_final</span><span class="p">),</span><span class="nb">len</span><span class="p">(</span><span class="n">ios_final</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cat</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">christopher</span><span class="o">/</span><span class="n">hungry</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
 
     </div>
@@ -13878,7 +13273,9 @@ number of unique apps: 9660
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>8862 4056
+<pre>!# bin/bash/
+
+echo &#34;I am hungry. Feed me data.&#34; &gt;&gt; demands.txt
 </pre>
 </div>
 </div>
@@ -13886,128 +13283,13 @@ number of unique apps: 9660
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In the above code cell I take the lists that have been cleaned of all non english terms and check to see what price they are. If they are free (cost of zero), the entries are then added to a last list.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Most-Common-Apps-by-Genre:-Part-1">Most Common Apps by Genre: Part 1<a class="anchor-link" href="#Most-Common-Apps-by-Genre:-Part-1">&#182;</a></h3>
-<pre><code>1) Give readers more context into why we want to find an app profile that fits both the App Store and Google Play. Explain our validation strategy for an app idea.
-
-2) Inspect both data sets and identify the columns you could use to generate frequency tables to find out what are the most common genres in each market.</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Since we're a company that makes both android and apple applications we are looking for apps that have similar traffic over both platforms. Our validation strategy is that we would rapidly develop an android application, get user research data from it, and if we find that the app is appropriately profitable, we then move forward and develop and app for the apple platform and add it to the iOS App Store.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>To understand both datasets we need to find commonalities that the datasets share.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Most-Common-Apps-by-Genre:-Part-2">Most Common Apps by Genre: Part 2<a class="anchor-link" href="#Most-Common-Apps-by-Genre:-Part-2">&#182;</a></h3><p>Building functions to understand data between the datasets</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">freq_table</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
-    
-    <span class="n">table</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
-    
-    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">:</span>
-        <span class="n">total</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="n">value</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">table</span><span class="p">:</span>
-            <span class="n">table</span><span class="p">[</span><span class="n">value</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">table</span><span class="p">[</span><span class="n">value</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-            
-    <span class="n">table_percentages</span> <span class="o">=</span> <span class="p">{}</span>
-    
-    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">table</span><span class="p">:</span>
-        <span class="n">percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">/</span> <span class="n">total</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
-        <span class="n">table_percentages</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">percentage</span>
-        
-    <span class="k">return</span> <span class="n">table_percentages</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The above function generates a frequency table.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">display_table</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
-    
-    <span class="n">table</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
-    <span class="n">table_display</span> <span class="o">=</span> <span class="p">[]</span>
-    
-    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">table</span><span class="p">:</span>
-        <span class="n">key_val_as_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="n">key</span><span class="p">)</span>
-        <span class="n">table_display</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key_val_as_tuple</span><span class="p">)</span>
-        
-    <span class="n">table_sorted</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">table_display</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">table_sorted</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">entry</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This function takes the output from the last made function and flips it into descending order.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_table</span><span class="p">(</span><span class="n">ios_final</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="n">bash</span> <span class="o">~/</span><span class="n">hungry</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
 
     </div>
@@ -14024,29 +13306,7 @@ number of unique apps: 9660
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Games : 55.64595660749507
-Entertainment : 8.234714003944774
-Photo &amp; Video : 4.117357001972387
-Social Networking : 3.5256410256410255
-Education : 3.2544378698224854
-Shopping : 2.983234714003945
-Utilities : 2.687376725838264
-Lifestyle : 2.3175542406311638
-Finance : 2.0710059171597637
-Sports : 1.947731755424063
-Health &amp; Fitness : 1.8737672583826428
-Music : 1.6518737672583828
-Book : 1.6272189349112427
-Productivity : 1.5285996055226825
-News : 1.4299802761341223
-Travel : 1.3806706114398422
-Food &amp; Drink : 1.0601577909270217
-Weather : 0.7642998027613412
-Reference : 0.4930966469428008
-Navigation : 0.4930966469428008
-Business : 0.4930966469428008
-Catalogs : 0.22189349112426035
-Medical : 0.19723865877712032
+<pre>cat: crontab: No such file or directory
 </pre>
 </div>
 </div>
@@ -14058,276 +13318,17 @@ Medical : 0.19723865877712032
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Most-Common-Apps-by-Genre:-Part-3">Most Common Apps by Genre: Part 3<a class="anchor-link" href="#Most-Common-Apps-by-Genre:-Part-3">&#182;</a></h3><p>The heavy majority of app users are gamers. From there we're nearly descending equal parts everything else other than entertainment. What this means is that we have a list of the most downloaded free applications that use English in their interface and/or app details on the platform.</p>
+<p><img src="./time_piece.jpeg" alt="time piece"></p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Most-Popular-Apps-by-Genre-on-the-App-Store">Most Popular Apps by Genre on the App Store<a class="anchor-link" href="#Most-Popular-Apps-by-Genre-on-the-App-Store">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">genres_ios</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">(</span><span class="n">ios_final</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">genre</span> <span class="ow">in</span> <span class="n">genres_ios</span><span class="p">:</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">len_genre</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">ios_final</span><span class="p">:</span>
-        <span class="n">genre_app</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">genre_app</span> <span class="o">==</span> <span class="n">genre</span><span class="p">:</span>
-            <span class="n">n_ratings</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
-            <span class="n">total</span> <span class="o">+=</span> <span class="n">n_ratings</span>
-            <span class="n">len_genre</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">avg_n_ratings</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">len_genre</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">genre</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">avg_n_ratings</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Social Networking : 53078.195804195806
-Photo &amp; Video : 27249.892215568863
-Games : 18924.68896765618
-Music : 56482.02985074627
-Reference : 67447.9
-Health &amp; Fitness : 19952.315789473683
-Weather : 47220.93548387097
-Utilities : 14010.100917431193
-Travel : 20216.01785714286
-Shopping : 18746.677685950413
-News : 15892.724137931034
-Navigation : 25972.05
-Lifestyle : 8978.308510638299
-Entertainment : 10822.961077844311
-Food &amp; Drink : 20179.093023255813
-Sports : 20128.974683544304
-Book : 8498.333333333334
-Finance : 13522.261904761905
-Education : 6266.333333333333
-Productivity : 19053.887096774193
-Business : 6367.8
-Catalogs : 1779.5555555555557
-Medical : 459.75
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Most-Popular-Apps-by-Genre-on-Google-Play">Most Popular Apps by Genre on Google Play<a class="anchor-link" href="#Most-Popular-Apps-by-Genre-on-Google-Play">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">categories_android</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">(</span><span class="n">android_final</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories_android</span><span class="p">:</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">len_category</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">android_final</span><span class="p">:</span>
-        <span class="n">category_app</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">category_app</span> <span class="o">==</span> <span class="n">category</span><span class="p">:</span>
-            <span class="n">n_installs</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
-            <span class="n">n_installs</span> <span class="o">=</span> <span class="n">n_installs</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-            <span class="n">n_installs</span> <span class="o">=</span> <span class="n">n_installs</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-            <span class="n">total</span> <span class="o">+=</span> <span class="nb">float</span><span class="p">(</span><span class="n">n_installs</span><span class="p">)</span>
-            <span class="n">len_category</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="n">avg_n_installs</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">len_category</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">avg_n_installs</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>ART_AND_DESIGN : 1986335.0877192982
-AUTO_AND_VEHICLES : 647317.8170731707
-BEAUTY : 513151.88679245283
-BOOKS_AND_REFERENCE : 8767811.894736841
-BUSINESS : 1712290.1474201474
-COMICS : 817657.2727272727
-COMMUNICATION : 38456119.167247385
-DATING : 854028.8303030303
-EDUCATION : 1820673.076923077
-ENTERTAINMENT : 11640705.88235294
-EVENTS : 253542.22222222222
-FINANCE : 1387692.475609756
-FOOD_AND_DRINK : 1924897.7363636363
-HEALTH_AND_FITNESS : 4188821.9853479853
-HOUSE_AND_HOME : 1331540.5616438356
-LIBRARIES_AND_DEMO : 638503.734939759
-LIFESTYLE : 1437816.2687861272
-GAME : 15560965.599534342
-FAMILY : 3694276.334922527
-MEDICAL : 120616.48717948717
-SOCIAL : 23253652.127118643
-SHOPPING : 7036877.311557789
-PHOTOGRAPHY : 17805627.643678162
-SPORTS : 3638640.1428571427
-TRAVEL_AND_LOCAL : 13984077.710144928
-TOOLS : 10682301.033377837
-PERSONALIZATION : 5201482.6122448975
-PRODUCTIVITY : 16787331.344927534
-PARENTING : 542603.6206896552
-WEATHER : 5074486.197183099
-VIDEO_PLAYERS : 24727872.452830188
-NEWS_AND_MAGAZINES : 9549178.467741935
-MAPS_AND_NAVIGATION : 4056941.7741935486
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">under_100_m</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">android_final</span><span class="p">:</span>
-    <span class="n">n_installs</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
-    <span class="n">n_installs</span> <span class="o">=</span> <span class="n">n_installs</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-    <span class="n">n_installs</span> <span class="o">=</span> <span class="n">n_installs</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;COMMUNICATION&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">n_installs</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">100000000</span><span class="p">):</span>
-        <span class="n">under_100_m</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">n_installs</span><span class="p">))</span>
-        
-<span class="nb">sum</span><span class="p">(</span><span class="n">under_100_m</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">under_100_m</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[23]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3603485.3884615386</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">android_final</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BOOKS_AND_REFERENCE&#39;</span><span class="p">:</span>
-        <span class="n">temp_list</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">str</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])))</span>
-
-<span class="n">temp_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">20</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[35]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;E-Book Read - Read Book for free:50,000+&#39;,
- &#39;Download free book with green book:100,000+&#39;,
- &#39;Wikipedia:10,000,000+&#39;,
- &#39;Cool Reader:10,000,000+&#39;,
- &#39;Free Panda Radio Music:100,000+&#39;,
- &#39;Book store:1,000,000+&#39;,
- &#39;FBReader: Favorite Book Reader:10,000,000+&#39;,
- &#39;English Grammar Complete Handbook:500,000+&#39;,
- &#39;Free Books - Spirit Fanfiction and Stories:1,000,000+&#39;,
- &#39;Google Play Books:1,000,000,000+&#39;,
- &#39;AlReader -any text book reader:5,000,000+&#39;,
- &#39;Offline English Dictionary:100,000+&#39;,
- &#39;Offline: English to Tagalog Dictionary:500,000+&#39;,
- &#39;FamilySearch Tree:1,000,000+&#39;,
- &#39;Cloud of Books:1,000,000+&#39;,
- &#39;Recipes of Prophetic Medicine for free:500,000+&#39;,
- &#39;ReadEra – free ebook reader:1,000,000+&#39;,
- &#39;Anonymous caller detection:10,000+&#39;,
- &#39;Ebook Reader:5,000,000+&#39;,
- &#39;Litnet - E-books:100,000+&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">android_final</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BOOKS_AND_REFERENCE&#39;</span> <span class="ow">and</span> <span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1,000,000,000+&#39;</span>
-                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;500,000,000+&#39;</span>
-                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;100,000,000+&#39;</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>wc -l ~/demands.txt
 </pre></div>
 
     </div>
@@ -14344,119 +13345,11 @@ MAPS_AND_NAVIGATION : 4056941.7741935486
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Google Play Books : 1,000,000,000+
-Bible : 100,000,000+
-Amazon Kindle : 100,000,000+
-Wattpad 📖 Free Books : 100,000,000+
-Audiobooks from Audible : 100,000,000+
+<pre>33 /home/christopher/demands.txt
 </pre>
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">android_final</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BOOKS_AND_REFERENCE&#39;</span> <span class="ow">and</span> <span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1,000,000+&#39;</span>
-                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;5,000,000+&#39;</span>
-                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;10,000,000+&#39;</span>
-                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;50,000,000+&#39;</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Wikipedia : 10,000,000+
-Cool Reader : 10,000,000+
-Book store : 1,000,000+
-FBReader: Favorite Book Reader : 10,000,000+
-Free Books - Spirit Fanfiction and Stories : 1,000,000+
-AlReader -any text book reader : 5,000,000+
-FamilySearch Tree : 1,000,000+
-Cloud of Books : 1,000,000+
-ReadEra – free ebook reader : 1,000,000+
-Ebook Reader : 5,000,000+
-Read books online : 5,000,000+
-eBoox: book reader fb2 epub zip : 1,000,000+
-All Maths Formulas : 1,000,000+
-Ancestry : 5,000,000+
-HTC Help : 10,000,000+
-Moon+ Reader : 10,000,000+
-English-Myanmar Dictionary : 1,000,000+
-Golden Dictionary (EN-AR) : 1,000,000+
-All Language Translator Free : 1,000,000+
-Aldiko Book Reader : 10,000,000+
-Dictionary - WordWeb : 5,000,000+
-50000 Free eBooks &amp; Free AudioBooks : 5,000,000+
-Al-Quran (Free) : 10,000,000+
-Al Quran Indonesia : 10,000,000+
-Al&#39;Quran Bahasa Indonesia : 10,000,000+
-Al Quran Al karim : 1,000,000+
-Al Quran : EAlim - Translations &amp; MP3 Offline : 5,000,000+
-Koran Read &amp;MP3 30 Juz Offline : 1,000,000+
-Hafizi Quran 15 lines per page : 1,000,000+
-Quran for Android : 10,000,000+
-Satellite AR : 1,000,000+
-Oxford A-Z of English Usage : 1,000,000+
-Dictionary.com: Find Definitions for English Words : 10,000,000+
-English Dictionary - Offline : 10,000,000+
-Bible KJV : 5,000,000+
-NOOK: Read eBooks &amp; Magazines : 10,000,000+
-Brilliant Quotes: Life, Love, Family &amp; Motivation : 1,000,000+
-Stats Royale for Clash Royale : 1,000,000+
-Dictionary : 10,000,000+
-wikiHow: how to do anything : 1,000,000+
-EGW Writings : 1,000,000+
-My Little Pony AR Guide : 1,000,000+
-Spanish English Translator : 10,000,000+
-Dictionary - Merriam-Webster : 10,000,000+
-JW Library : 10,000,000+
-Oxford Dictionary of English : Free : 10,000,000+
-English Hindi Dictionary : 10,000,000+
-English to Hindi Dictionary : 5,000,000+
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In conclusion, the direction this analysis began to illuminate is that it would advantageous to experiment putting out popular books as a stand alone application.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
 
