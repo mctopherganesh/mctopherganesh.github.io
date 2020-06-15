@@ -78,6 +78,14 @@ th a {
 
 }
 
+.blurb {
+	padding: 20px;
+}
+
+.navbar {
+	margin: 20px;
+}
+
 .nav-link {
 	/*background-color: rgb(162,228,149);*/
 	color: black;
@@ -116,14 +124,13 @@ div.card-footer {
 	margin-top: 75px;
 }
 
-#footer {
-	background-color: black;
-}
 
-#footer .row {
-	background-color: black;
-}
 
 img.gmail-picture {
 	margin-top: 3px;
 }
+
+footer .row{
+	background-color: black;
+}
+

@@ -12,6 +12,16 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114046963-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-114046963-1');
+	</script>
+
 </head>
 
 
@@ -25,7 +35,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto" style="list-style: none;">
 				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home </a>
+					<a class="nav-link" href="index.html" id="home">Home </a>
 				<li class="nav-item">
 					<a class="nav-link" href="#contact"> Contact </a>
 				</li>
@@ -38,50 +48,45 @@
 			</ul>
 		</div>
 	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<!-- <img class="profile-picture" src="profpic.png" title="me irl"> -->
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+			<div class="col-md-6">
+			</div>
+		</div>
+	</div>
 
 	<!--<p>This is where the magic happens</p>-->
   <div class="container-fluid">
 			<div class="row">
-	      <div class="col-md-3">
+	      <div class="col-md-6">
+			<img class="profile-picture" src="profpic.png" title="me irl">
 	      </div>
 	      <div class="col-md-6">
 	          <h1 class="card-title" title="mctopherganesh" id="name-title-header">Christopher Ganesh McMahon</h1>
-	          <p class="card-text"><em>Self taught programmer with professional
-							experience building browser testing automation tools. Proficient
-							in Python scripting, web scraping, and data analysis.</em></p>
-	          <p class="card-text"></p>
-	      </div>
-				<div class="col-md-3">
-	      </div>
+	          <p class="card-text">
+				<!--# write blurb-->
+				I am a self-taught programmer with five years personal experience in the Python ecosystem. 
+				I started off scraping the web, moved into browser automation testing, and am currently learning all I can about 
+				data science and analysis. With Python, I have the ablility to rapidly prototype systems, to automate tedious task 
+				work or to use it as a tool to learn about a multitude of subject matter.
+			</p>
+			<p class="card-text">
+				I have two years of professional experience building browser automation tools as a Quality Assurance assistant and I am 
+				currently educating myself in the practices of machine learning, statistics, linear algebra, natural language processing, 
+				and advanced data analysis and visualization. 
+			</p>
       </div>
   </div>
 	<br>
-	<div class="container-fluid" id="about">
-			<div class="row">
-				<div class="col-md-6">
-					<img class="profile-picture" src="profpic.png" title="me irl">
-				</div>
-				<div class="col-md-6">
-					<h1 class="card-title">About</h1>
-					<p class="card-text">
-						Hey there and welcome to my website! I made this
-						website with my own two hands (and the help of some HTML, CSS, and Bootstrap).
-						I've been teaching myself programming for about four years now. Currently
-						I've been focusing on building my data analysis skillset (by way of Dataquest
-						and other personal data projects) and learning how to craft data visualizations
-						in JavaScript.
-					</p>
-					<p class="card-text">
-						When I'm not coding, developing, programming or
-						doing analysis on data I'm thinking about it. I currently
-						freelance as a QA Analyst and in my free time I'm reading, climbing,
-						writing/blogging or drinking coffee. I'm from Wisconsin originally but
-						have lived in Colorado, Florida, and am now presently living in Dallas,
-						Texas.
-					</p>
-				</div>
-			</div>
-	</div>
 	<br>
 	<div class="container-fluid" id="projects">
 		<div class="row">
@@ -159,20 +164,10 @@
 	</div>
 	<br>
 	<br>
-	<div class="container-fluid card-footer" id="footer">
-	  <div class="row">
-      <div class="col-md-4">
-				<br>
-      </div>
-      <div class="col-md-4">
-          <h1 class="card-title" id="contact">Contact</h1>
-					<br>
-      </div>
-      <div class="col-md-4">
-				<br>
-      </div>
-	  </div>
-		<div class="row">
+</body>	
+<footer id="contact">
+	
+	<div class="row">
       <div class="col-md-4">
       </div>
       <div class="col-md-4">
@@ -185,5 +180,5 @@
       </div>
 	  </div>
 	</div>
-</body>
+</footer>
 </html>
