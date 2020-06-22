@@ -14,7 +14,6 @@ html {
 }
 
 .title-text {
-  font-family: 'Khand', sans-serif;
   font-size: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -54,10 +53,6 @@ th a {
 .table {
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.card-title {
-	font-family: 'Khand', sans-serif;
 }
 
 .row {
