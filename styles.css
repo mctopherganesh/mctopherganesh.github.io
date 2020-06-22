@@ -13,18 +13,6 @@ html {
 	margin: auto;
 }
 
-
-.profile-picture {
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 50%;
-	width: 68%;
-	height: auto;
-	margin: 10px;
-}
-
-
 .title-text {
   font-family: 'Khand', sans-serif;
   font-size: 50px;
@@ -130,4 +118,45 @@ img.gmail-picture {
 
 footer .row{
 	background-color: black;
+}
+
+.carousel-header-one {
+	/* background-color: black; */
+	/* -webkit-text-stroke: 1px black; */
+	opacity: 100%;
+}
+
+.carousel-text-one {
+	/* background-color: black; */
+	opacity: 100%;
+}
+
+.carousel-caption {
+	background-color: black;
+	opacity: 70%;
+	border-radius: 15px;
+}
+
+
+
+.blurb-text {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 15px;
+}
+
+.blurb-text a {
+	color: rgb(162,228,149);
+}
+
+.testy-title {
+	font-family: 'Odibee Sans', cursive;
+	color: rgb(162,228,149);
+}
+
+.blurb-title {
+	font-family: 'Odibee Sans', cursive;
+}
+
+.about-pic {
+	border-radius: 75px;
 }

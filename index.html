@@ -7,6 +7,11 @@
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Bahianita|Cuprum|Fjalla+One|Khand|Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap" rel="stylesheet">
+	<!-- testing these	-->
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -35,133 +40,164 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto" style="list-style: none;">
 				<li class="nav-item">
-					<a class="nav-link" href="index.html" id="home">Home </a>
+					<a class="nav-link blurb-text" href="index.html" id="home">Home </a>
 				<li class="nav-item">
-					<a class="nav-link" href="#contact"> Contact </a>
+					<a class="nav-link blurb-text" href="#contact">Contact </a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="blog.html"> Blog </a>
+					<a class="nav-link blurb-text" href="christopher_mcmahon_resume.pdf">Resume </a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" title="hire me!" href="christopher_mcmahon_resume.pdf"> Resume </a>
+					<a class="nav-link blurb-text" href="blog.html">Blog </a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link blurb-text" href="about.html">About</a>
+				</li>
+				
 			</ul>
 		</div>
 	</nav>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6">
-				<!-- <img class="profile-picture" src="profpic.png" title="me irl"> -->
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-			</div>
-			<div class="col-md-6">
-			</div>
-		</div>
-	</div>
 
 	<!--<p>This is where the magic happens</p>-->
   <div class="container-fluid">
-			<div class="row">
+
+	<div class="row">
+		
+			<div class="col-md-3">
+
+			</div>
 	      <div class="col-md-6">
-			<img class="profile-picture" src="profpic.png" title="me irl">
-	      </div>
-	      <div class="col-md-6">
-	          <h1 class="card-title" title="mctopherganesh" id="name-title-header">Christopher Ganesh McMahon</h1>
-	          <p class="card-text">
+			<br>
+			<br>
+
+
+	          <h1 class="testy-title" title="mctopherganesh" id="name-title-header">Christopher Ganesh McMahon</h1>
+	          <p class="blurb-text">
 				<!--# write blurb-->
 				I am a self-taught programmer with five years personal experience in the Python ecosystem. 
-				I started off scraping the web, moved into browser automation testing, and am currently learning all I can about 
-				data science and analysis. With Python, I have the ablility to rapidly prototype systems, to automate tedious task 
-				work or to use it as a tool to learn about a multitude of subject matter.
+				I have experience creating tools for automating data acquisition and manipulation, browser testing, 
+				and at present, building my facilities within the domain of data programming. 
 			</p>
-			<p class="card-text">
-				I have two years of professional experience building browser automation tools as a Quality Assurance assistant and I am 
-				currently educating myself in the practices of machine learning, statistics, linear algebra, natural language processing, 
-				and advanced data analysis and visualization. 
-			</p>
-      </div>
+			<br>
+			<br>
+			
+	  </div>
+	  
+	  <div class="col-md-3">
+
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			
+		</div>
+		<div class="col-md-4">
+			<h2 class="testy-title">Project Portfolio</h2>
+		</div>
+		<div class="col-md-4">
+
+		</div>
+	</div>
+	<div class="row">
+      <div class="col-md-3">
+
+	  </div>
+	  <div class="col-md-6">
+		<br>
+		<br>
+		<ul class="list-unstyled">
+			<li class="media">
+			  <img src="img/909.jpg" class="mr-3" alt="..." width="65" height="65">
+			  <div class="media-body">
+				<h5 class="mt-0 mb-1 blurb-title">(bs) data pipeline</h5>
+				<p class="blurb-text">
+					building a discord bot that will collect my blood sugar 
+					data and return requested graphical representations. <br>
+					<a href="https://github.com/mctopherganesh/diabetes_data">[github]</a>
+					<a href="https://www.youtube.com/watch?v=8Z6Zoao9YLI&t=9s">[youtube]</a>
+				</p>
+			  </div>
+			</li>
+			<li class="media my-4">
+			  <img src="img/59252.jpg" class="mr-3" alt="..." width="65" height="65">
+			  <div class="media-body">
+				<h5 class="mt-0 mb-1 blurb-title">email factory</h5>
+				<p class="blurb-text">
+					small script that automates the creation of emails, storing 
+					them in a csv for easy uploading to a marketing email platform <br>
+					<a href="https://github.com/mctopherganesh/email_addy_factory" target="_blank">
+					[github]
+					</a>
+				</p>
+			  </div>
+			</li>
+			<li class="media">
+			  <img src="img/toy-37522_960_720.png" class="mr-3" alt="..." width="65" height="65">
+			  <div class="media-body">
+				<h5 class="mt-0 mb-1 blurb-title">emotions analysis</h5>
+				<p class="blurb-text">
+					tracked my emotions for a year and conducted a quick
+					and robust analysis on it with python and tableau <br>
+					<a href="Emotions_Report.html" target="_blank">
+						[report]
+					</a>
+					<a href="https://github.com/mctopherganesh/emotions_tracking/blob/master/emotions_analysis/emotions_tracking_workflow.ipynb" target="_blank">
+						[workflow]
+					</a>
+
+				</p>
+			  </div>
+			</li>
+		  </ul>
+	  </div>
+	  <div class="col-md-3">
+
+	</div>
+	  <!-- <div class="col-md-6">
+		  <br>
+		  <br>
+		<ul class="list-unstyled">
+			<li class="media">
+			  <div class="media-body">
+				<h5 class="mt-0 mb-1 blurb-title">another project</h5>
+				<p class="blurb-text">
+					blah blah blah blah blah <br>
+					<a href="">[github]</a>
+				</p>
+			  </div>
+			  <img src="img/909.jpg" class="mr-3" alt="..." width="65" height="65">
+			</li>
+			<li class="media my-4">
+			  <div class="media-body">
+				<h5 class="mt-0 mb-1 blurb-title">another project</h5>
+				<p class="blurb-text">
+					cool stuff that people think is cool<br>
+					<a href="">
+					[github]
+					</a>
+				</p>
+			  </div>
+			  <img src="img/59252.jpg" class="mr-3" alt="..." width="65" height="65">
+			</li>
+			<li class="media">
+			  <div class="media-body">
+				<h5 class="mt-0 mb-1 blurb-title">another project</h5>
+				<p class="blurb-text">
+					blarg<br>
+					<a href="">
+						[github]
+					</a>	
+
+				</p>
+			  </div>
+			  <img src="img/toy-37522_960_720.png" class="mr-3" alt="..." width="65" height="65">
+			</li>
+		  </ul>
+	  </div> -->
   </div>
 	<br>
 	<br>
-	<div class="container-fluid" id="projects">
-		<div class="row">
-      <div class="col-md-3">
-      </div>
-      <div class="col-md-6">
-          <h1 class="card-title">Current Projects</h1>
-      </div>
-      <div class="col-md-3">
-      </div>
-  	</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="card">
-					<img src="./Selection_861.png" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Site Workflow</h5>
-						<p class="card-text">
-							This is a repository where I show how I approach problems releated to working on this site.
-						</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-muted"><a href="https://github.com/mctopherganesh/site-workflow" target="_blank">On Github</a> </small>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="card">
-					<img src="./Selection_792.png" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">100 days of code challenge</h5>
-						<p class="card-text">
-							On my second time around with the challenge. I originally made this
-							website to house the blog I am posting to for every(read: most) days
-							of the challenge.
-						</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-muted"><a href="https://github.com/mctopherganesh/mctopherganesh.github.io" target="_blank">On Github</a> <strong>|</strong> <a href="./blog.html">Blog</a></small>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="card">
-					<img src="./Selection_793.png" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Data Visualization with JavaScript</h5>
-						<p class="card-text">
-							A <a href="https://nostarch.com/" target="_blank">No Starch Press</a> book I'm working through that is providing me plenty of
-							opportunities for additional side projects, one of which I built is a data
-							processing tool that translates data into a JavaScript array with Python.
-						</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-muted"><a href="https://github.com/mctopherganesh/data-visualization-with-javascript" target="_blank">On Github</a></small>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="card">
-					<img src="./Selection_790.png" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Fortnite Game Data Analysis</h5>
-						<p class="card-text">
-							Fortnite individual game data is not saved but presented at the
-							end of each game. I (manually) collect that data and mine it for insights.
-						</p>
-					</div>
-					<div class="card-footer">
-						<small class="text-muted"><a href="https://github.com/mctopherganesh/fortnite-data-mine" target="_blank">On Github</a></small>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+</div>
 	<br>
 	<br>
 </body>	
