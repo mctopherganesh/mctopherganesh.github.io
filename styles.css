@@ -28,6 +28,8 @@ h1.blog-title-text {
   /*padding: 0px 20px 10px 20px;*/
   background-color: rgb(14,57,50);
   color: rgb(202,212,191);
+  height: 100%;
+  margin-bottom: -50px;
 
 }
 
@@ -111,32 +113,26 @@ img.gmail-picture {
 	margin-top: 3px;
 }
 
+
+
+.footer {
+	position: absolute;
+	bottom 0;
+	width: 100%;
+}
+
 footer .row{
 	background-color: black;
 }
 
-.carousel-header-one {
-	/* background-color: black; */
-	/* -webkit-text-stroke: 1px black; */
-	opacity: 100%;
+.home-blurb-text {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 20px;
 }
-
-.carousel-text-one {
-	/* background-color: black; */
-	opacity: 100%;
-}
-
-.carousel-caption {
-	background-color: black;
-	opacity: 70%;
-	border-radius: 15px;
-}
-
-
 
 .blurb-text {
 	font-family: 'Exo 2', sans-serif;
-	font-size: 15px;
+	font-size: 17px;
 }
 
 .blurb-text a {
@@ -154,4 +150,15 @@ footer .row{
 
 .about-pic {
 	border-radius: 75px;
+}
+
+.about-portrait {
+	float: left;
+	padding-top: 50px;
+	padding-bottom: -50px;
+}
+
+.about-blurb {
+	float: right;
+	padding-top: 10%;
 }
