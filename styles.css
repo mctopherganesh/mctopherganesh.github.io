@@ -199,7 +199,7 @@ ul.tree li {
  margin: 0;
  padding: 0 7px;
  line-height: 20px;
- color: rgb(162,228,149);
+ color: rgb(87, 136, 77); /*text color on blog roll*/
  font-weight: bold;
  border-left:1px solid rgb(202,212,191);
 
@@ -235,4 +235,8 @@ ul.tree li:last-child:before {
 .special-padding {
 	padding: 15px;
 	margin: 15px;
+}
+
+.blog-roll-list-mech li {
+	padding: 10px;
 }
