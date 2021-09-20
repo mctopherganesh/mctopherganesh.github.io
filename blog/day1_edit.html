@@ -2,11 +2,10 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>something</title>
+<title>day1_edit</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114046963-1"></script>
 
 
 
@@ -16331,77 +16330,24 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>date
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Mon 02 Aug 2021 10:41:14 PM EDT
-</pre>
-</div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="day-1-..">day 1 ..<a class="anchor-link" href="#day-1-..">&#182;</a></h2><p>2019-07-24 01:12:15.531117</p>
+<p>Day 1 I wanted to go wild and out. I've done 100 days before. It was like..hundreds of days ago.</p>
+<p>So yeah, I know I've got some skills. I wanted to mess around with some javascript and make a graph but I can't figure out the whole .min.js file in the folder thing so maybe someone can tell me who knows about those things.</p>
+<p>So I wanted to publicly start a project. I want to catalog a bunch of videos I want to watch on Youtube and see if I can't make a language corpus for the channel as well. What will these things help me with? Not much useful stuff but it's challenging and for now that's reason enough.</p>
+<p>The channel I've picked is Siraj Rival's channel. He's super energetic, fun to watch, and talks about awesome things so maybe I might be able to meta learn from doing this to his channel. Going to start with the smallest slice, getting the transcript.</p>
 
 </div>
 </div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello fun world&#39;</span><span class="p">)</span>
-<span class="c1"># because we&#39;re lazy (you&#39;re partial to this to now) we&#39;ll put it in a function</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>hello cool world
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># in beta. </span>
-
-<span class="c1"># today i had to write a ton of html for this one thing. </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">youtube_transcript_api</span> <span class="kn">import</span> <span class="n">YouTubeTranscriptApi</span>
 </pre></div>
 
     </div>
@@ -16412,54 +16358,99 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Okay it wasn't a ton but it was like this confusing piece i have to write to post a blog so i can make my blog roll all drop down menu-y</p>
-<p>so im going to write a thingy that make that bit of code for me so i can copy paste it in. in future developments maybe i'll be an adult about the whole thing and use javascript.</p>
-<p>for now tho.</p>
-<p>yolo.</p>
+<p>Install it if you don't have it. <a href="http://lmgtfy.com/?q=how+to+install+YouTube+Transcript+Api+python">I'm your friend</a></p>
+<p>Someone already made something dope and easy to use so just use that.</p>
+<p>all you need is the part of the video link that comes after the equal sign in address bar</p>
+<hr>
+<p>here's the url: <a href="https://www.youtube.com/watch?v=9rDhY1P3YLA">https://www.youtube.com/watch?v=9rDhY1P3YLA</a></p>
+<p>I could just cut it off and copy paste away but I am trying to build something I can use in the future.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">blog_post_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;a href=&quot;./blog/just_a_little_bit.html&quot; target=&quot;_blank&quot;&gt;&lt;li&gt;this one isn&#39;t about python&lt;/li&gt;&lt;/a&gt; </span>
-<span class="s2">&quot;&quot;&quot;</span>
-
-<span class="c1"># it&#39;s a doozy</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">video_url</span> <span class="o">=</span> <span class="s2">&quot;https://www.youtube.com/watch?v=9rDhY1P3YLA&quot;</span>
+<span class="n">video_splice</span> <span class="o">=</span> <span class="n">video_url</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)</span>
+<span class="n">video_splice</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;https://www.youtube.com/watch?v&#39;, &#39;9rDhY1P3YLA&#39;]</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>admittedly i just started whipping it together up there but i figure maybe it's better to show workflow. makes for better content at least. let's make it official.</p>
-<h1 id="workflow">workflow<a class="anchor-link" href="#workflow">&#182;</a></h1><p>that up there is  a link to my latest blog post. if you haven't read it you should go back and read it right now before you keep going in this one because there's spoilers. the spoiler is that they have nothing to do with each other.</p>
-<p>oh great your stuck here now.</p>
-<p>we can change things to make that link work for us.</p>
+
+</div>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">html_file</span> <span class="o">=</span> <span class="s1">&#39;one_here.html&#39;</span>
-<span class="n">slug</span> <span class="o">=</span> <span class="s1">&#39;and one here&#39;</span>
-
-<span class="n">blog_post_string</span> <span class="o">=</span> <span class="s1">&#39;&lt;a href=&quot;./blog/</span><span class="si">{html_file}</span><span class="s1">&quot; target=&quot;_blank&quot;&gt;&lt;li&gt;</span><span class="si">{slug}</span><span class="s1">&lt;/li&gt;&lt;/a&gt; &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">html_file</span><span class="o">=</span><span class="n">html_file</span><span class="p">,</span> <span class="n">slug</span><span class="o">=</span><span class="n">slug</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">video_transcript</span> <span class="o">=</span> <span class="n">YouTubeTranscriptApi</span><span class="o">.</span><span class="n">get_transcript</span><span class="p">(</span><span class="n">video_splice</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">video_transcript</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[23]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[{&#39;text&#39;: &#39;come for the data science stay for the&#39;,
+  &#39;start&#39;: 0.0,
+  &#39;duration&#39;: 5.19},
+ {&#39;text&#39;: &#34;memes hello world it&#39;s Suraj and data&#34;,
+  &#39;start&#39;: 1.89,
+  &#39;duration&#39;: 5.31},
+ {&#39;text&#39;: &#39;science is the hottest career to get&#39;,
+  &#39;start&#39;: 5.19,
+  &#39;duration&#39;: 4.32},
+ {&#39;text&#39;: &#39;into this year every industry is&#39;, &#39;start&#39;: 7.2, &#39;duration&#39;: 4.59},
+ {&#39;text&#39;: &#39;collecting customer data and using it to&#39;,
+  &#39;start&#39;: 9.51,
+  &#39;duration&#39;: 4.799},
+ {&#39;text&#39;: &#39;make smarter decisions which leads to&#39;,
+  &#39;start&#39;: 11.79,
+  &#39;duration&#39;: 5.069},
+ {&#39;text&#39;: &#39;higher profits the demand to fill data&#39;,
+  &#39;start&#39;: 14.309,
+  &#39;duration&#39;: 4.831}]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -16469,7 +16460,150 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">blog_post_string</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">video_transcript</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="c1"># how to separate one &#39;text&#39; from the pack</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;come for the data science stay for the&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">video_transcript_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">video_transcript</span><span class="p">:</span>
+    <span class="n">video_transcript_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">video_transcript</span><span class="p">[</span><span class="n">a</span><span class="p">][</span><span class="s1">&#39;text&#39;</span><span class="p">])</span>
+    <span class="n">a</span><span class="o">+=</span><span class="mi">1</span>
+    
+<span class="n">video_transcript_list</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[25]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;come for the data science stay for the&#39;,
+ &#34;memes hello world it&#39;s Suraj and data&#34;,
+ &#39;science is the hottest career to get&#39;,
+ &#39;into this year every industry is&#39;,
+ &#39;collecting customer data and using it to&#39;,
+ &#39;make smarter decisions which leads to&#39;,
+ &#39;higher profits the demand to fill data&#39;,
+ &#39;science positions is through the roof&#39;,
+ &#39;globally and forecasts reveal that this&#39;,
+ &#39;demand will only increase in the coming&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>alrighty, now for the finale. I'm going to turn it into a string.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
+<span class="n">transcript_string</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">video_transcript_list</span><span class="p">)</span>
+
+<span class="n">transcript_string</span><span class="p">[:</span><span class="mi">500</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[28]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#34;come for the data science stay for the memes hello world it&#39;s Suraj and data science is the hottest career to get into this year every industry is collecting customer data and using it to make smarter decisions which leads to higher profits the demand to fill data science positions is through the roof globally and forecasts reveal that this demand will only increase in the coming years so to help you take part in this rapidly growing field I&#39;ve created a three-month curriculum to take you from a&#34;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>boom da boom. That's not all I have done today for coding but I don't always just want to work on my site. I also did some Dataquest lessons. Let me know what you think.</p>
+<p>Peace.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>date # begin of EDIT
 </pre></div>
 
     </div>
@@ -16486,195 +16620,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;a href=&#34;./blog/one_here.html&#34; target=&#34;_blank&#34;&gt;&lt;li&gt;and one here&lt;/li&gt;&lt;/a&gt; 
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pyperclip</span> <span class="c1"># this makes it easy to copy stuff to the clipboard.</span>
-
-<span class="k">def</span> <span class="nf">make_blog_html_post_thing_that_makes_my_life_easy</span><span class="p">(</span><span class="n">html_file</span><span class="p">,</span> <span class="n">slug</span><span class="p">):</span>
-    <span class="c1"># the wonders of tab finish</span>
-    <span class="c1"># always document children</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    this function takes the name of an html file or the path to one in string type</span>
-<span class="sd">    and the slug, a small descriptive text in string type and outputs the link</span>
-<span class="sd">    to copy and paste in new_blog.html</span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    
-    <span class="c1"># that&#39;s as plain as i can put it. will accept criticism for coffee</span>
-    
-    <span class="n">blog_post_string</span> <span class="o">=</span> <span class="s1">&#39;&lt;a href=&quot;./blog/</span><span class="si">{html_file}</span><span class="s1">&quot; target=&quot;_blank&quot;&gt;&lt;li&gt;</span><span class="si">{slug}</span><span class="s1">&lt;/li&gt;&lt;/a&gt; &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">html_file</span><span class="o">=</span><span class="n">html_file</span><span class="p">,</span> <span class="n">slug</span><span class="o">=</span><span class="n">slug</span><span class="p">)</span>
-    
-   
-    <span class="n">pyperclip</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">blog_post_string</span><span class="p">)</span>
-    
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># always test</span>
-<span class="n">make_blog_html_post_thing_that_makes_my_life_easy</span><span class="p">(</span><span class="s1">&#39;something.html&#39;</span><span class="p">,</span> 
-                                                  <span class="s1">&#39;something&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>&lt;a href="./blog/something.html" target="_blank"&gt;&lt;li&gt;something&lt;/li&gt;&lt;/a&gt;</code></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>what u can't tell here is that i pasted after i ran the function and it worked.</p>
-<p>hooray</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="That's-it">That's it<a class="anchor-link" href="#That's-it">&#182;</a></h1><p>there ya go. i made a thing. as far as thing's go, that's pretty simple. now to actually make it effective i will have to write it into it's own python file that does things and then probably make a command line alias for it. this also is still manual to a point, where i have to go still <em>click</em> into the right place in the blog roll html file.</p>
-<p>obviously this is already getting out of hand.</p>
-<p>the command line argument can come later.</p>
-<p>next time...follow me as i</p>
-<h1 id="build-the-thing-that-finds-the-place-in-the-html-file-that-is-my-blog-roll-where-new-posts-should-go-and-places-the-link-from-the-function-i-made-earlier-into-that-spot-and-saves-the-file">build the thing that finds the place in the html file that is my blog roll where new posts should go and places the link from the function i made earlier into that spot and saves the file<a class="anchor-link" href="#build-the-thing-that-finds-the-place-in-the-html-file-that-is-my-blog-roll-where-new-posts-should-go-and-places-the-link-from-the-function-i-made-earlier-into-that-spot-and-saves-the-file">&#182;</a></h1><p>below is a little bit</p>
-<p>bye</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span> <span class="k">as</span> <span class="n">bs</span>
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">Comment</span>
-
-
-
-<span class="n">html</span> <span class="o">=</span> <span class="s1">&#39;../new_blog.html&#39;</span>
-<span class="n">html</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="n">soup</span> <span class="o">=</span> <span class="n">bs</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
-<span class="n">comments</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="n">string</span><span class="o">=</span><span class="k">lambda</span> <span class="n">text</span><span class="p">:</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">Comment</span><span class="p">))</span>
-<span class="c1"># lambdas is what you get when you copy paste stack over flow code</span>
-<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">comments</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=============&quot;</span><span class="p">)</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
-    
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>put new posts above this line
-=============
-&lt;ul&gt;
-              &lt;li&gt;Pachyderms
-             &lt;/ul&gt;
-            &lt;li class=&#34;last&#34;&gt;Mouse&lt;/li&gt;
-           &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li class=&#34;last&#34;&gt;Reptiles&lt;/li&gt;
-         &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li class=&#34;last&#34;&gt;Plants
-         &lt;ul&gt;
-          &lt;li&gt;Flowers
-           &lt;ul&gt;
-            &lt;li&gt;Rose&lt;/li&gt;
-            &lt;li class=&#34;last&#34;&gt;Tulip&lt;/li&gt;
-           &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li class=&#34;last&#34;&gt;Trees&lt;/li&gt;
-         &lt;/ul&gt;
-        &lt;/li&gt;
-       &lt;/ul&gt; 
-=============
-ul class=&#34;tree&#34;&gt; #100DaysOfcode
-        &lt;li&gt;This
-         &lt;ul&gt;
-          &lt;li&gt;Tree&lt;/li&gt;
-          &lt;li&gt;List
-           &lt;ul&gt;
-            &lt;li&gt;Is
-             &lt;ul&gt;
-              &lt;li&gt;Just
-             &lt;/ul&gt;
-            &lt;li class=&#34;last&#34;&gt;A&lt;/li&gt;
-           &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li class=&#34;last&#34;&gt;Placeholder&lt;/li&gt;
-         &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li class=&#34;last&#34;&gt;Until
-         &lt;ul&gt;
-          &lt;li&gt;I
-           &lt;ul&gt;
-            &lt;li&gt;Figure&lt;/li&gt;
-            &lt;ul&gt;
-            &lt;li class=&#34;last&#34;&gt;Out&lt;/li&gt;
-            &lt;/ul&gt;
-           &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;How&lt;/li&gt;
-         &lt;ul&gt;
-             &lt;li&gt;To
-             
-             &lt;/li&gt;
-             &lt;li&gt;Scrape&lt;/li&gt;
-             &lt;li&gt;My&lt;/li&gt;
-             &lt;li&gt;Old&lt;/li&gt;
-             &lt;li&gt;Site&lt;/li&gt;
-             &lt;/ul&gt;
-         &lt;/ul&gt;
-         &lt;/ul&gt;
-        &lt;/li&gt;
-       &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;col-md-4&#34;&gt;&lt;/div&gt;
-=============
+<pre>Sat 07 Aug 2021 08:19:04 PM EDT
 </pre>
 </div>
 </div>
@@ -16686,13 +16632,39 @@ ul class=&#34;tree&#34;&gt; #100DaysOfcode
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>that's right. u see sublists. O_o</p>
-<p><code>pyperclip</code> is an external library that <a href="https://automatetheboringstuff.com/">this guy wrote</a></p>
-<p><code>BeautifulSoup</code> has nothing to do with soup and helps programmers take apart html files and stuff can be found <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">here</a> about it.</p>
-<p>the code from above was copied from <a href="https://stackoverflow.com/questions/33138937/how-to-find-all-comments-with-beautiful-soup">here</a>. i kind of understand it, but :P</p>
+<h1 id="EDIT">EDIT<a class="anchor-link" href="#EDIT">&#182;</a></h1><p>okay spoiler alert. i didn't end up doing what i said i was going to do in the first part of this post. why? i'm not sure i haven't read day two yet and i said i was going to go wild up there so who knows <strong>WHAT</strong> was going to happen. and the very last cell where i said i'm going to turn it into a <em>string</em> i don't even test the data type..i just print it. so silly.</p>
+<p>the reason i was interested in this in the first place was to build up a kind of search bank for conversational knowledge on certain educational youtube videos. i think that was the intention. i'm not sure what i inteded to build tho..</p>
+<p>okay for some vocab words up there. and maybe down here too.</p>
+<ul>
+<li><p><strong>min.js</strong> i still have no clue, something you need in your local directory to run javascript (that's a wile guess)</p>
+</li>
+<li><p><strong>corpus</strong> is a collection of words. honestly that's the simplest version of it. the reason it's called a corpus is because of what it is used for, and it's used to teach machines how to read things within the context of what words are provided in that corpus. a corpus is kind of a data structure that you can get information about these words too.</p>
+</li>
+<li><p><strong>data structure</strong> tbh, data structures and algorithms were my last course in <em>computer science</em> in school. and it was hard but simply - a data structure is for storing data, an algorithm is a pattern to take that data and move it over here and do something fancy to it. in code a data structure can look like these</p>
+</li>
+</ul>
+
+<pre><code>some_data = ['look at all the data', 1, 3]
+some other data = { 'this one' : 'has key value pairs',
+                    'key' : 'value'
+                    'do' : 'do'}</code></pre>
+<p>with all that contextual knowledge it's good to probably know that my indecision in ever completing this project probably came from trying to decide whether to write code or to find another youtuber. or day two came and i was hurrying trying to put code together.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
